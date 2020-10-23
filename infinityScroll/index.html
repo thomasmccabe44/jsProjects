@@ -13,11 +13,33 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
 		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="styles.css" />
 	</head>
 	<body>
-		<!-- Script     -->
+		<!-- Title -->
+		<h1>Unspalsh API - Infinite Scroll</h1>
 
-		<script src="script.js"></script>
+		<!-- Loader -->
+		<div class="loader" id="loader" hidden>
+			<img src="loader.svg.svg" alt="Loading" />
+		</div>
+		<!-- Image Container -->
+		<div class="imgContainer" id="imgContainer">
+			<img
+				src="https://images.unsplash.com/photo-1592839656073-833413ae8874?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+				alt="Modern kitchen"
+			/>
+			<img
+				src="https://images.unsplash.com/photo-1592928302636-c83cf1e1c887?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+				alt="modern livingroom"
+			/>
+		</div>
+
+		<!-- Script     -->
+		<script src="scripts.js"></script>
 	</body>
 </html>

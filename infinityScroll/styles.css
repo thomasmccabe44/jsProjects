@@ -9,11 +9,60 @@ html {
 body {
 	margin: 0;
 	min-height: 100vh;
-	font-family: "Staatliches", cursive;
+	font-family: "Exo 2", sans-serif;
+	background: whitesmoke;
 	font-weight: 700;
 	text-align: center;
-	color: #ffffff;
-	display: flex;
+	color: slategrey;
+	align-items: center;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	font-size: 40px;
+	letter-spacing: 5px;
+}
+
+/* Loader  */
+.loader {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba (255, 255, 255, 0.8);
+}
+
+.loader img {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* Image Container */
+
+.imgContainer {
+	margin: 10px 30%;
+	display: block;
 	align-items: center;
 	justify-content: center;
+}
+
+.imgContainer img {
+	width: 100%;
+	margin-top: 5px;
+}
+
+/* Media Query: Large Smartphone */
+@media screen and (max-width: 600px) {
+	h1 {
+		font-size: 20px;
+	}
+
+	.imgContainer {
+		margin: 10px;
+	}
 }
